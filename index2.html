@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!--external css for styling-->
+     <link
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     rel="stylesheet"
+   />
+<style>
+    #containers{
+        display: flex;
+    }
+</style>
+</head>
+<body>
+    <main  class="container">
+ <!-- /Interactive And Dynamic -->
+    <!-- 
+        C - Create
+        R - Read
+        U - Update
+        D - Delete
+    
+    -->
+    <!-- CRUD IN THE DOM -->
+    <h1>CRUD IN THE DOM</h1>
+
+    <!--   C - Create -->
+    <div class="card">
+    <div>
+        <button id="btn" onclick="create()">Create Question</button>
+    </div>
+    </div>
+<br>
+<hr>
+  <!--   R - Read -->
+  <div>
+    <p id="readQn">Question:What Is DOM</p>
+    <div class="card">
+      <div>
+          <button onclick="read()">Read Question</button>
+      </div>
+  <!-- where to Read the created object -->
+  <p id="showQn" style="color: blue;"></p>
+  <br>
+  <hr>
+    </div>
+
+  </div>
+ 
+     <!--   C - Update -->
+     <div id="card">
+        <p id="updateQn">Update Question</p>
+<button id="btn2" onclick="update()">Update</button>
+     </div>
+     <br>
+     <hr>
+
+      <!--   C - Delete -->
+      <div class="card">
+        <p id="deleteQn">Delete Question</p>
+        <button id="btn4" onclick="go()">Delete Me</button>
+      </div>
+      <br>
+      <hr>
+    </main>
+   
+    <script src="crud.js"></script>
+</body>
+</html>
